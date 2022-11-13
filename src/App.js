@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Select } from "@contentstack/venus-components";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Select
+        onChange={() => {}}
+        options={[
+          {
+            label: "Option 1",
+            value: 1,
+          },
+          {
+            label: "Option 2",
+            value: 2,
+          },
+          {
+            label: "Option 3",
+            value: 3,
+          },
+        ]}
+      />
+      {/* <Select
+        onChange={() => {}}
+        isMulti
+        options={[
+          {
+            label: "Option 1",
+            value: 1,
+          },
+          {
+            label: "Option 2",
+            value: 2,
+          },
+          {
+            label: "Option 3",
+            value: 3,
+          },
+        ]}
+      /> */}
     </div>
   );
 }
